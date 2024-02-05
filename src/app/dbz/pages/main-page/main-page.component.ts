@@ -26,4 +26,14 @@ export class MainPageComponent {
       power: 7500
     }
   ];
+
+  //Se puede llamar de cualquier manera, no necesita llamarse de la
+  //misma manera que el nombre del evento
+  onNewCharacter = (character: Character): void => {
+    this.characters.push(character);
+  }
+
+  onDeleteCharacter = (index: number): void => {
+    this.characters.splice(index, 1);
+  }
 }
