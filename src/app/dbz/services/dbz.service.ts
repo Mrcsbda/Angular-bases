@@ -30,7 +30,7 @@ export class DbzService {
 
     //Se puede llamar de cualquier manera, no necesita llamarse de la
     //misma manera que el nombre del evento
-    onNewCharacter = (character: Character): void => {
+    addCharacter = (character: Character): void => {
 
         const newCharacter: Character = {
             id: uuid(),
